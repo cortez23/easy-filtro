@@ -234,7 +234,7 @@ body {
 	margin: 0;
 	background-color: #fff;
 	border: solid 1px #DBDBDB;
-	margin: 0 4px;
+	margin: 4px;
 }
 span.porciento, {
     background-color: #ec2427;
@@ -280,7 +280,28 @@ h5.despach {
 	.container.contenedor {
 		width: 100%;
 	}
+	.col-sm-4.col-md-3.col-lg-2.menu{
+		max-width: 24.333333%;
+	}
+	.col-sm-8.col-lg-10.produc{
+		min-width: 75.666667%;
+	}
 
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	.col-sm-4.col-md-3.col-lg-2.menu{
+		width: 27.33333333%;
+	}
+	.col-sm-8.col-lg-10.produc{
+		width: 72.666667%;
+	}
+	.col-sm-4.col-md-3.col-lg-3.caja{
+		width: 48.333333%;
+	}
 }
 
 @media (min-width: 992px){
