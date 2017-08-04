@@ -280,15 +280,6 @@ h5.despach {
 	.container.contenedor {
 		width: 100%;
 	}
-	.col-sm-4.col-md-3.col-lg-2.menu{
-		width: 23.33333333%;
-	}
-	.col-sm-8.col-lg-10.produc{
-		width: 75.666667%;
-	}
-	.col-sm-4.col-md-3.col-lg-3.caja{
-		max-width: 48.333333%;
-	}
 
 
 }
