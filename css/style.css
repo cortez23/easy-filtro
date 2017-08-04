@@ -236,14 +236,22 @@ body {
 	border: solid 1px #DBDBDB;
 	margin: 0 4px;
 }
+span.porciento, {
+    background-color: #ec2427;
+}
+h3.valor{
+	color: #ec2427;
+}
 img.img-productos{
 	width: 100%;
 	height: auto;
 }
 h3.title-produc {
-    margin: 5px 0px 0 5px;
     font-size: 16px;
     letter-spacing: 2px;
+}
+.comparar{
+	margin: 10px!important;
 }
 span.porciento {
     background-color: #ec2427;
@@ -253,11 +261,19 @@ span.porciento {
 h3.valor {
     margin: 5px 0 0 6px;
 }
-h4.valor-internet, h5.valor-normal, h5.despach, span.porciento{
-	margin: 2px 5px;
+h4.valor-internet, h5.valor-normal, h5.despach, span.porciento, h3.title-produc{
+	margin-top: 5px;
+	margin-left: 8px;
+	margin-right:5px;
+	margin-bottom: 2px;
 }
+
 hr.linea-separa {
     margin: 9px 5px;
+}
+h5.despach {
+    margin-bottom: 12px;
+    font-size: 12px;
 }
 
 @media (min-width: 768px){
