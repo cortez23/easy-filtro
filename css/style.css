@@ -390,6 +390,7 @@ and (orientation : portrait) {
   [type="checkbox"]:not(:checked) + label {
     padding-left: 30px;
   }
+
 }
 
 
@@ -409,11 +410,19 @@ and (orientation : portrait) {
 	}
 	
 }
-
+@media (max-width: 1180px){
+    span.tarjeta{
+    float: none;
+  }
+  .col-xs-12.col-sm-4.col-md-3.col-lg-3.caja{
+    min-width: 45%;
+  }
+}
 @media (min-width: 1200px){
 	 .col-lg-3.caja {
     width: 24.146667%;
 }
+
 }
 @media (min-width: 1367px){
 	.container.contenedor {
