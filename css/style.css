@@ -261,6 +261,12 @@ span.porciento {
 h3.valor {
     margin: 5px 0 0 6px;
 }
+span.tarjeta{
+  float: right;
+  height: auto;
+  margin-bottom: 3px;
+}
+
 h4.valor-internet, h5.valor-normal, h5.despach, span.porciento, h3.title-produc{
 	margin-top: 5px;
 	margin-left: 8px;
@@ -276,17 +282,13 @@ h5.despach {
     font-size: 12px;
 }
 
-@media (min-width: 768px){
-	.container.contenedor {
-		width: 100%;
-	}
 
 
-}
+
+/**/
 @media only screen 
 and (min-device-width : 320px) 
-and (max-device-width : 568px) 
-and (orientation : portrait){
+and (max-device-width : 667px){
 
   .caja-img{
     width: 40%;
@@ -300,6 +302,41 @@ and (orientation : portrait){
     width: 60%;
     height: auto;
     float: right; 
+  }
+  h3.title-produc {
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+  h3.valor {
+    font-size: 20px;
+    margin: 5px 0 0 6px;
+  }
+  span.tarjeta{
+    float: none;
+  }
+  h4.valor-internet{
+    font-size: 14px;
+  }
+  h5.valor-normal{
+    font-size: 12px;
+  } 
+  [type="checkbox"]:not(:checked) + label {
+    padding-left: 30px;
+  }
+}
+
+
+@media (min-width: 768px){
+  .container.contenedor {
+    width: 100%;
+  }
+  }
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape){
+  span.tarjeta{
+    float: none;
   }
 }
 
@@ -316,7 +353,45 @@ and (orientation : portrait) {
 	.col-sm-4.col-md-3.col-lg-3.caja{
 		width: 48.333333%;
 	}
+  h3.valor{
+    margin-bottom: 10px;
+  }
 }
+
+@media (max-width: 767px){
+ 
+  .caja-img{
+    width: 40%;
+    height: auto;
+    float: left;
+  }
+  .caja-img .img-productos{
+    margin: 30px 0;
+  }
+  .caja-info{
+    width: 60%;
+    height: auto;
+    float: right; 
+  }
+  h3.title-produc {
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+  h3.valor {
+    font-size: 20px;
+    margin: 5px 0 0 6px;
+  }
+  h4.valor-internet{
+    font-size: 14px;
+  }
+  h5.valor-normal{
+    font-size: 12px;
+  } 
+  [type="checkbox"]:not(:checked) + label {
+    padding-left: 30px;
+  }
+}
+
 
 @media (min-width: 992px){
 	.container.contenedor {
@@ -356,9 +431,7 @@ and (orientation : portrait) {
 		   
 	}
 }
-@media (min-width: 1367px){
 
-}
 
 
 
