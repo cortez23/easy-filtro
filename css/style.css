@@ -248,7 +248,7 @@ img.img-productos{
 }
 h3.title-produc {
     font-size: 16px;
-    letter-spacing: 2px;
+    /*letter-spacing: 2px;*/
 }
 .comparar{
 	margin: 10px!important;
@@ -338,6 +338,9 @@ and (orientation : landscape){
   span.tarjeta{
     float: none;
   }
+  .col-sm-4.col-md-3.col-lg-3.caja{
+    width: 48.333333%;
+  }
 }
 
 @media only screen 
@@ -366,7 +369,7 @@ and (orientation : portrait) {
     float: left;
   }
   .caja-img .img-productos{
-    margin: 30px 0;
+    /*margin: 30px 0;*/
   }
   .caja-info{
     width: 60%;
@@ -381,12 +384,15 @@ and (orientation : portrait) {
     font-size: 20px;
     margin: 5px 0 0 6px;
   }
+ 
+
   h4.valor-internet{
     font-size: 14px;
   }
   h5.valor-normal{
     font-size: 12px;
-  } 
+  }
+  [type="checkbox"]:checked + label,
   [type="checkbox"]:not(:checked) + label {
     padding-left: 30px;
   }
