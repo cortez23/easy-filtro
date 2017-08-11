@@ -20,12 +20,13 @@ body{
   color: #808080;
 }
 .nav-side-menu .brand {
-  background-color: #fff;
+  /*background-color: #fff;*/
+  background-color: #e8e9e6;
   border-bottom: 1px solid #E8E9E6;
   line-height: 50px;
   display: block;
   text-align: left;
-  font-size: 14px;
+  font-size: 16px;
   padding: 0 0 0 15px;
 }
 .nav-side-menu .toggle-btn {
@@ -89,7 +90,8 @@ body{
 }
 .nav-side-menu li {
   padding-left: 0px;
-  border-bottom: 1px solid #E8E9E6;
+  border-bottom: 1px solid #fff;
+  background-color: #F5F5F5;
 }
 .nav-side-menu li a {
   text-decoration: none;
@@ -102,19 +104,20 @@ body{
   width: 20px;
   padding-right: 20px;
 }
-.nav-side-menu li:hover {
-  /*border-left: 3px solid #d19b3d;*/
+/*.nav-side-menu li:hover {
+  border-left: 3px solid #d19b3d;
   background-color: #e8e9e6;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
-}
+}*/
 @media (max-width: 767px) {
   .nav-side-menu {
     position: relative;
     width: 100%;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
   .nav-side-menu .toggle-btn {
@@ -125,7 +128,7 @@ body{
     top: 10px;
     z-index: 10 !important;
     padding: 3px;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     color: #000;
     width: 40px;
     text-align: center;
@@ -222,19 +225,46 @@ body {
 }
 [type="checkbox"]:disabled:checked + label:after
 
-/*CONTENIDOS*/
+/*--------------CONTENIDOS--------------------------*/
+
+
 
 .col-xs-12.col-lg-9.produc{
 	padding: 0;
 	margin: 0;
 }
+  i.fa.fa-angle-down.flecha{
+    font-size: 24px;
+    color: #EC2427;
+    margin-right: 10px;
+  }
+  span.icon-camion, span.icon-bolsa,span.icon-casona {
+    color: #EC2427 ;
+    font-size: 20px;
+    padding: 0 13px;
+    display: inline-block;
+    float: right;
+  }
+  span.icon-bolsa, span.icon-casona{
+    border-right: solid 1px #ccc;
+  }
+  h5.despach{
+    float: left;
+  }
+  li#linea {
+    border-bottom: solid 1px #ccc;
+  }
+
+
+
 
 .col-lg-3.caja{
 	padding: 0;
 	margin: 0;
 	background-color: #fff;
 	border: solid 1px #DBDBDB;
-	margin: 4px;
+	margin: 10px;
+  padding: 10px;
 }
 span.porciento, {
     background-color: #ec2427;
@@ -267,7 +297,7 @@ span.tarjeta{
   margin-bottom: 3px;
 }
 
-h4.valor-internet, h5.valor-normal, h5.despach, span.porciento, h3.title-produc{
+h4.valor-internet, h5.valor-normal, span.porciento, h3.title-produc{
 	margin-top: 5px;
 	margin-left: 8px;
 	margin-right:5px;
@@ -295,14 +325,19 @@ and (max-device-width : 667px){
     height: auto;
     float: left;
   }
-  .caja-img .img-productos{
+/*  .caja-img .img-productos{
     margin: 30px 0;
-  }
+  }*/
   .caja-info{
     width: 60%;
     height: auto;
     float: right; 
   }
+  .col-xs-12.col-sm-4.col-md-3.col-lg-3.caja {
+    padding: 2px;
+    margin: 5px 0;
+    width: 100%!important;
+    }
   h3.title-produc {
     font-size: 14px;
     letter-spacing: 0px;
@@ -323,13 +358,23 @@ and (max-device-width : 667px){
   [type="checkbox"]:not(:checked) + label {
     padding-left: 30px;
   }
+    span.icon-camion, span.icon-bolsa, span.icon-casona {
+    color: red ;
+    font-size: 18px;
+    padding: 0 5px;
+  }
 }
 
 
-@media (min-width: 768px){
+@media (max-width: 768px){
   .container.contenedor {
     width: 100%;
   }
+  .col-xs-12.col-sm-4.col-md-3.col-lg-3.caja{
+    /*min-width: 100%!important;*/
+  }
+
+
   }
 @media only screen 
 and (min-device-width : 768px) 
@@ -340,6 +385,11 @@ and (orientation : landscape){
   }
   .col-sm-4.col-md-3.col-lg-3.caja{
     width: 48.333333%;
+  }
+  span.icon-casona, span.icon-bolsa, span.icon-casona {
+    color: red ;
+    font-size: 18px;
+    padding: 0 5px;
   }
 }
 
@@ -376,6 +426,7 @@ and (orientation : portrait) {
     height: auto;
     float: right; 
   }
+
   h3.title-produc {
     font-size: 14px;
     letter-spacing: 0px;
@@ -397,9 +448,16 @@ and (orientation : portrait) {
     padding-left: 30px;
   }
 
+
 }
 
+@media (max-width: 992px){
+  .col-xs-12.col-sm-4.col-md-3.col-lg-3.caja{
+    width: 100%;
+    margin: 10px 0;
+  }
 
+}
 @media (min-width: 992px){
 	.container.contenedor {
 		width: 100%;
@@ -410,10 +468,10 @@ and (orientation : portrait) {
 	.col-sm-8.col-lg-10.produc{
 		width: 79.2666%;
 	}
-	.col-md-3.col-lg-3.caja{
-		width: 23.67666%;
+	.col-xs-12.col-sm-4.col-md-3.col-lg-3.caja{
+		width: 22.67666%;
+  }
 
-	}
 	
 }
 @media (max-width: 1180px){
@@ -421,13 +479,55 @@ and (orientation : portrait) {
     float: none;
   }
   .col-xs-12.col-sm-4.col-md-3.col-lg-3.caja{
-    min-width: 45%;
+    min-width: 47%;
   }
+    .caja-img{
+    width: 40%;
+    height: auto;
+    float: left;
+  }
+ /* .caja-img .img-productos{
+    margin: 5px 0;
+  }*/
+  .caja-info{
+    width: 60%;
+    height: auto;
+    float: right; 
+  }
+  span.icon-camion, span.icon-bolsa, span.icon-casona {
+    color: #EC2427;
+    font-size: 18px;
+    padding: 0 6px;
+    display: inline-block;
+    float: right;
+}
 }
 @media (min-width: 1200px){
 	 .col-lg-3.caja {
     width: 24.146667%;
 }
+}
+
+@media (max-width: 1280px){
+  h3.valor{
+    height: 60px;
+  }
+  span.tarjeta{
+    float: none;
+    height: auto;
+    margin-bottom: 3px;
+  }
+  span.icon-camion, span.icon-bolsa, span.icon-casona {
+    color: #EC2427;
+    font-size: 20px;
+    padding: 0 6px;
+    display: inline-block;
+    float: right;
+  }
+  li#linea {
+    border-bottom: solid 1px #ccc;
+  }
+
 
 }
 @media (min-width: 1367px){
@@ -443,7 +543,6 @@ and (orientation : portrait) {
 	}
 	.col-lg-3.caja{
 		   width: 24.266667%;
-		   
 	}
 }
 

@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ghww8b');
+  src:  url('fonts/icomoon.eot?ghww8b#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ghww8b') format('truetype'),
+    url('fonts/icomoon.woff?ghww8b') format('woff'),
+    url('fonts/icomoon.svg?ghww8b#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bolsa:before {
+  content: "\e902";
+}
+.icon-camion:before {
+  content: "\e900";
+}
+.icon-casa1:before {
+  content: "\e901";
+}
+.icon-casona:before {
+  content: "\1f330";
+}
+.icon-fleja-abajo:before {
+  content: "\1f331";
+}
