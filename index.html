@@ -26,13 +26,15 @@
 	<div class="container contenedor">
 		<div class="row">
 			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 menu">
-				<div class="nav-side-menu">
+				<div class="nav-side-menu" id="menu">
     				<div class="brand">Filtrar por:</div>
-    					<i class="fa fa-angle-down fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-	  					<div class="menu-list">
+    					<i class="fa fa-caret-down fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+	  					
+            <div class="menu-list">
   						<ul id="menu-content" class="menu-content collapse out">
-							<li  data-toggle="collapse" data-target="#products" class="collapsed ">
-								<a href="#"></i> <i class="fa fa-angle-down flecha" aria-hidden="true"></i>Marcas<!--span class="arrow"></span--></a> 
+							<a class="link" href="#"><li  data-toggle="collapse" data-target="#products" class="collapsed ">
+              <span class="fa icon-etiqueta-3"></span>
+								Marcas<i class="fa fa-angle-down" aria-hidden="true"></i></a> 
                 			</li>
                 			<ul class="sub-menu collapse" id="products">
                     		<li class="active">
@@ -53,48 +55,62 @@
     						</li>
                 			</ul>
 
-							<li data-toggle="collapse" data-target="#service" class="collapsed">
-                  			<a href="#"><i class="fa fa-angle-down flecha" aria-hidden="true"></i>Precios<!--span class="arrow"></span--></a>
+							<a class="link" href="#"><li data-toggle="collapse" data-target="#service" class="collapsed"><span class="fa icon-peso-3"></span>
+                  			Precios<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 			</li>  
                 			<ul class="sub-menu collapse" id="service">
                   				<li>
-                  					<a href="">Menos de $50.000</a>
+                            <input type="checkbox" id="valor1" />
+                  					<label for="valor1">Menos de $50.000</label>
                   				</li>
                   				<li>
-                  					<a href="">$50.000 - $120.000</a>
-                  				</li>
-                  				<li>
-                  					<a href="">$120.000 - $240.000</a>
-                  				</li>
+                            <input type="checkbox" id="valor2" />
+                            <label for="valor2">$50.000 a $120.000</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="valor3" />
+                            <label for="valor3">$120.000 a $240.000</label>
+                          </li>
                 			</ul>
-							<li data-toggle="collapse" data-target="#new" class="collapsed">
-                  				<a href="#"><i class="fa fa-angle-down flecha" aria-hidden="true"></i>New <!--span class="arrow"></span--></a>
+							<a class="link" href="#"><li data-toggle="collapse" data-target="#new" class="collapsed"><span class="fa icon-peso-3"></span>
+                  				Otro filtro<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 			</li>
                 			<ul class="sub-menu collapse" id="new">
-                  				<li>New New 1</li>
-                  				<li>New New 2</li>
-                  				<li id="linea">New New 3</li>
+                  				<li>
+                            <input type="checkbox" id="otro-filtro1" />
+                            <label for="otro-filtro1">Otro filtro</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="otro-filtro2" />
+                            <label for="otro-filtro2">Otro filtro</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="otro-filtro3" />
+                            <label for="otro-filtro3">Otro filtro</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="otro-filtro4" />
+                            <label for="otro-filtro4">Otro filtro</label>
+                          </li>
                 			</ul>
-							
             			</ul>
      					</div>
 				</div>
 			</div>
+
 			<div class="col-xs-12 col-sm-8 col-lg-10 produc">
 				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 caja">
 				  <figure>
-                    <div class="caja-img">
+            <div class="caja-img">
+                    <span class="porciento">-20%</span>
 					   <a href="">
-						  <img class="img-productos" src="img/productos/tractor.jpg" alt="img_productos">
+              <img class="img-productos" src="img/productos/cama.jpg" alt="img_productos">
 					   </a>
-                    </div>
-                    <div class="caja-info">
-					   <h3 class="title-produc">Tractor 17.5 hp b&s 42 13an772s308 rojo Yard machines</h3>
-				        <div class="comparar">
-						  <input type="checkbox" id="testa" />
-    					   <label for="testa">Compara</label>
-    				    </div>
-    				    <span class="porciento">-20%</span>
+            </div>
+            <div class="caja-info">
+            <span class="porciento-right">-20%</span>
+					   <h3 class="title-produc">Set colchón balance 3 king base 5 zonas dividida respaldo velador…</h3>
+				       
     				    <h3 class="valor">
     					   $1.650.000
                            <span class="tarjeta">
@@ -107,101 +123,111 @@
     				    <h5 class="valor-normal">
     					   Normal: $15.000
     				    </h5>
+                <div class="comparar">
+              <input type="checkbox" id="test-a" />
+                 <label for="test-a">Compara</label>
+                </div>
     				    <hr class="linea-separa">
-    				    <h5 class="despach">Tipo de entrega</h5><span class="icon-camion"></span><td><span class="icon-bolsa"></span>
+    				    <h5 class="despach">Tipo de entrega</h5><span class="icon-camion-linea-2"></span><td><span class="icon-casa-linea-3"></span>
                     </div>
 				  </figure>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 caja">
                 <figure>
                     <div class="caja-img">
-                       <a href="">
-                          <img class="img-productos" src="img/productos/tractor.jpg" alt="img_productos">
-                       </a>
-                    </div>
-                    <div class="caja-info">
-                       <h3 class="title-produc">Tractor 17.5 hp b&s 42 13an772s308 rojo Yard machines</h3>
-                        <div class="comparar">
-                          <input type="checkbox" id="testb" />
-                           <label for="testb">Compara</label>
-                        </div>
-                        <span class="porciento">-20%</span>
-                        <h3 class="valor">
-                           $1.650.000
+                    <span class="porciento">-20%</span>
+             <a href="">
+              <img class="img-productos" src="img/productos/cama.jpg" alt="img_productos">
+             </a>
+            </div>
+            <div class="caja-info">
+            <span class="porciento-right">-20%</span>
+             <h3 class="title-produc">Set colchón balance 3 king base 5 zonas dividida respaldo velador…</h3>
+               
+                <h3 class="valor">
+                 $1.650.000
                            <span class="tarjeta">
                                <img src="img/tarjeta.png" class="img-responsive" alt="Image">
                            </span>
-                        </h3>
-                        <h4 class="valor-internet">
-                           Internet: $1.250.000
-                        </h4>
-                        <h5 class="valor-normal">
-                           Normal: $15.000
-                        </h5>
-                        <hr class="linea-separa">
-                        <h5 class="despach">Tipo de entrega</h5><span class="icon-camion"></span><td><span class="icon-casona"></span>
+                </h3>
+                <h4 class="valor-internet">
+                 Internet: $1.250.000
+                </h4>
+                <h5 class="valor-normal">
+                 Normal: $15.000
+                </h5>
+                <div class="comparar">
+              <input type="checkbox" id="test-b" />
+                 <label for="test-b">Compara</label>
+                </div>
+                <hr class="linea-separa">
+                <h5 class="despach">Tipo de entrega</h5><span class="icon-camion"></span><td><span class="icon-casona"></span>
+                    </div>
+          </figure>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 caja">
+                <figure>
+                   <div class="caja-img">
+                    <span class="porciento">-20%</span>
+             <a href="">
+              <img class="img-productos" src="img/productos/cama.jpg" alt="img_productos">
+             </a>
+            </div>
+            <div class="caja-info">
+            <span class="porciento-right">-20%</span>
+             <h3 class="title-produc">Set colchón balance 3 king base 5 zonas dividida respaldo velador…</h3>
+               
+                <h3 class="valor">
+                 $1.650.000
+                           <span class="tarjeta">
+                               <img src="img/tarjeta.png" class="img-responsive" alt="Image">
+                           </span>
+                </h3>
+                <h4 class="valor-internet">
+                 Internet: $1.250.000
+                </h4>
+                <h5 class="valor-normal">
+                 Normal: $15.000
+                </h5>
+                <div class="comparar">
+              <input type="checkbox" id="test-c"/>
+                 <label for="test-c">Compara</label>
+                </div>
+                <hr class="linea-separa">
+                        <h5 class="despach">Tipo de entrega: <br> <span style="color:red;">Retiro en tienda</span> y <span style="color:red;">Despacho</span></h5>
                     </div>
                 </figure>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 caja">
                 <figure>
-                    <div class="caja-img">
-                       <a href="">
-                          <img class="img-productos" src="img/productos/tractor.jpg" alt="img_productos">
-                       </a>
-                    </div>
-                    <div class="caja-info">
-                       <h3 class="title-produc">Tractor 17.5 hp b&s 42 13an772s308 rojo Yard machines</h3>
-                        <div class="comparar">
-                          <input type="checkbox" id="testc" />
-                           <label for="testc">Compara</label>
-                        </div>
-                        <span class="porciento">-20%</span>
-                        <h3 class="valor">
-                           $1.650.000
+                  <div class="caja-img">
+                    <span class="porciento">-20%</span>
+             <a href="">
+              <img class="img-productos" src="img/productos/cama.jpg" alt="img_productos">
+             </a>
+            </div>
+            <div class="caja-info">
+            <span class="porciento-right">-20%</span>
+             <h3 class="title-produc">Set colchón balance 3 king base 5 zonas dividida respaldo velador…</h3>
+               
+                <h3 class="valor">
+                 $1.650.000
                            <span class="tarjeta">
                                <img src="img/tarjeta.png" class="img-responsive" alt="Image">
                            </span>
-                        </h3>
-                        <h4 class="valor-internet">
-                           Internet: $1.250.000
-                        </h4>
-                        <h5 class="valor-normal">
-                           Normal: $15.000
-                        </h5>
-                        <hr class="linea-separa">
-                        <h5 class="despach">Tipo de entrega <span>Tienda</span> y <span>Despacho</span></h5>
-                    </div>
-                </figure>
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 caja">
-                <figure>
-                    <div class="caja-img">
-                       <a href="">
-                          <img class="img-productos" src="img/productos/tractor.jpg" alt="img_productos">
-                       </a>
-                    </div>
-                    <div class="caja-info">
-                       <h3 class="title-produc">Tractor 17.5 hp b&s 42 13an772s308 rojo Yard machines</h3>
-                        <div class="comparar">
-                          <input type="checkbox" id="testd" />
-                           <label for="testd">Compara</label>
-                        </div>
-                        <span class="porciento">-20%</span>
-                        <h3 class="valor">
-                           $1.650.000
-                           <span class="tarjeta">
-                               <img src="img/tarjeta.png" class="img-responsive" alt="Image">
-                           </span>
-                        </h3>
-                        <h4 class="valor-internet">
-                           Internet: $1.250.000
-                        </h4>
-                        <h5 class="valor-normal">
-                           Normal: $15.000
-                        </h5>
-                        <hr class="linea-separa">
-                        <h5 class="despach">Tipo de entrega <span>Tienda</span> y <span>Despacho</span></h5>
+                </h3>
+                <h4 class="valor-internet">
+                 Internet: $1.250.000
+                </h4>
+                <h5 class="valor-normal">
+                 Normal: $15.000
+                </h5>
+                <div class="comparar">
+              <input type="checkbox" id="test-d" />
+                 <label for="test-d">Compara</label>
+                </div>
+                <hr class="linea-separa">
+                        <h5 class="despach">Tipo de entrega: <br> <span style="color:red;">Retiro en tienda</span> y <span style="color:red;">Despacho</span></h5>
                     </div>
                 </figure>
 				</div>
@@ -209,9 +235,10 @@
 		</div>
 	</div>
 
-		<!-- jQuery -->
+		<!-- jQuery --> 
 		<script src="js/bootstrap.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/rotar.js"></script> 
 	</body>
 </html>
